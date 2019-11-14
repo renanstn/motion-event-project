@@ -24,7 +24,7 @@ void loop()
 
         HTTPClient http;
 
-        http.begin("http://127.0.0.1:5000");
+        http.begin("192.168.1.34", 5000);
         int httpCode = http.GET();
 
         if (httpCode > 0) {
@@ -39,5 +39,5 @@ void loop()
         http.end();
     }
 
-    delay(1000); // Taxa de atualizacao: 1 seg
+    delay(5000); // Taxa de atualizacao: 1 seg
 }
