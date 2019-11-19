@@ -2,7 +2,7 @@
 Repositório de um micro-projeto utilizando ESP-32 e um servidor em Flask (python), onde o ESP emite um sinal ao detectar movimentos, e este sinal aciona um atalho no computador que está rodando o servidor (um alt + tab, por exemplo)
 
 ## Oh God why?
-A idéia deste projeto veio de um produto chinês aleatório com a mesma proposta, cuja propaganda apareceu no meu feed.
+A idéia deste projeto veio [deste](https://www.tindie.com/products/dekuNukem/daytripper-hide-my-windows-laser-tripwire/) produto aleatório com a mesma proposta, cuja propaganda apareceu no meu feed em uma dia qualquer. Achei o produto interessante e resolvi replicar com os materiais que tinha em casa.
 
 ## Oh God how?
 O projeto é dividido em duas partes:
