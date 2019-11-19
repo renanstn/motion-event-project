@@ -7,4 +7,4 @@ A idéia deste projeto veio [deste](https://www.tindie.com/products/dekuNukem/da
 ## Oh God how?
 O projeto é dividido em duas partes:
 - Uma app REST rodando na máquina, que dá um alt + tab ao receber uma request de alerta.
-- O ESP32 com um sensor ultrassônico, posicionado em qualquer lugar da casa, na mesma rede wifi do computador onde está a API. O ESP emite a request de alerta quando o sensor detecta presença.
+- O ESP32 com um sensor de presença, posicionado em qualquer lugar da casa, na mesma rede wifi do computador onde está a API. O ESP32 emite a request de alerta quando o sensor detecta presença.
