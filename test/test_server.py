@@ -12,4 +12,4 @@ class TestServer(unittest.TestCase):
     def test_alert(self):
         response = requests.get(self.url + '/alert')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), {'hello': 'world'})
+        self.assertEqual(response.json(), {'info': 'alert received!'})
