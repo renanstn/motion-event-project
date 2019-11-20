@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from events import alt_tab
+from .events import alt_tab
 
 app = Flask(__name__)
 
