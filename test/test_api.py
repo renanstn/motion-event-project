@@ -1,13 +1,14 @@
 import unittest
-from ..src.server.api import app
+from src import *
 
 class testApi(unittest.TestCase):
 
     def setUp(self):
-        self.app = app.test_client()
+        api = create_app()
+        test_api = api.test_client()
 
     def test_hello(self):
-        response = self.app.get('/hello')
+        response = self.api.get('/hello')
         self.assertEqual(200, response.status_code)
 
 if __name__ == "__main__":
