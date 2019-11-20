@@ -1,11 +1,10 @@
 import unittest
-from src import *
+from run import app
 
 class testApi(unittest.TestCase):
 
     def setUp(self):
-        api = create_app()
-        test_api = api.test_client()
+        self.api = app.test_client()
 
     def test_hello(self):
         response = self.api.get('/hello')
