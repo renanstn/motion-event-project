@@ -1,13 +1,15 @@
+
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const int touch_pin = 15;
+const int signal_pin = 15;
 
-const char* ssid = "******";
-const char* password = "******";
+const char* ssid = "*****";
+const char* password = "*****";
 
 void setup()
 {
+    pinMode(signal_pin, INPUT);
     delay(4000);
     WiFi.begin(ssid, password);
     while (WiFi.status() != WL_CONNECTED) {
@@ -20,11 +22,11 @@ void loop()
     if ((WiFi.status() == WL_CONNECTED)) {
         HTTPClient http;
         http.begin("192.168.1.36", 5000, "/alert");
-        int touchValue = touchRead(touch_pin);
-        if (touchValue < 50) {
+        int signal_on = digitalRead(signal_pin);
+        if (signal_on == HIGH) {
             int httpCode = http.GET();
         }
         http.end();
     }
-    delay(500);
+    delay(50);
 }
