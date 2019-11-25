@@ -19,10 +19,10 @@ void setup()
 void loop()
 {
     if ((WiFi.status() == WL_CONNECTED)) {
-        HTTPClient http;
-        http.begin("0.0.0.0", 5000, "/alert"); // Coloque aqui o IP do seu PC
         int signal_on = digitalRead(signal_pin);
         if (signal_on == HIGH) {
+            HTTPClient http;
+            http.begin("0.0.0.0", 5000, "/alert"); // Coloque aqui o seu IP
             int httpCode = http.GET();
             delay(5000);
         }
