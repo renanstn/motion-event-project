@@ -12,3 +12,26 @@ O projeto é dividido em duas partes:
 - O ESP32 com um sensor de presença, posicionado em qualquer lugar da casa, na mesma rede wifi do computador onde está a API. O ESP32 emite a request para a API quando o sensor detecta presença.
 
 ![projeto finalizado](https://github.com/Doc-McCoy/motion-event-project/blob/master/screenshots/esp.jpg)
+
+## Oh God give me pieces!
+Para fazer este projeto, você precisará dos seguintes materiais:
+- Placa ESP32 ou equivalente
+- Sensor de movimento/presença PIR
+- Fonte de 5v para o PIR (pois o ESP32 só fornece 3.3v)
+- Protoboard
+- Fios
+
+## Oh God give me steps!
+- Clone o projeto, óbvio
+- Abra o arquivo `src/client/client-esp32.ino` com sua **IDE Arduino**
+- Adicione o nome e senha da sua rede WIFI nas linhas indicadas
+- Adicione o IP do seu PC na linha indicada (se vc não sabe ver seu IP, o comando é `ipconfig` para windows, e `ifconfig` para linux)
+- Carregue o código para o seu ESP32
+- Ligue o ESP32 ao sensor PIR, conecte o fio de *signal* do PIR ao pino 15 do ESP32
+- Feche a IDE Arduino, abra o projeto no seu editor de códigos favorito
+- Inicialize um ambiente virtual: `python -m venv .venv `
+- Ative seu ambiente virtual `source .venv\Scripts\activate` para windows ou `.venv\bin\activate` para linux
+- Instale as pedendências do projeto `pip install -r requirements.txt`
+- Ligue seu ESP32 a uma fonte de energia, e aguarde alguns segundos para que o sensor seja calibrado automaticamente
+- Suba o servidor com `python src\run.py`
+- Pronto! Toda vez que o ESP detectar um movimento, dará `alt + tab` na tela.
