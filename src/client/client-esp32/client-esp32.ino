@@ -25,6 +25,7 @@ void loop()
         int signal_on = digitalRead(signal_pin);
         if (signal_on == HIGH) {
             int httpCode = http.GET();
+            delay(5000);
         }
         http.end();
     }
