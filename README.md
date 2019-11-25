@@ -10,3 +10,5 @@ A idéia deste projeto veio [deste](https://www.tindie.com/products/dekuNukem/da
 O projeto é dividido em duas partes:
 - Uma API rodando na máquina, que utiliza o pyautogui para dar um comando específico (no caso, um "alt+tab") ao receber uma request de alerta.
 - O ESP32 com um sensor de presença, posicionado em qualquer lugar da casa, na mesma rede wifi do computador onde está a API. O ESP32 emite a request para a API quando o sensor detecta presença.
+
+![projeto finalizado](https://github.com/Doc-McCoy/motion-event-project/blob/master/screenshots/esp.jpg)
