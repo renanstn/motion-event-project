@@ -1,11 +1,10 @@
-
 #include <WiFi.h>
 #include <HTTPClient.h>
 
 const int signal_pin = 15;
 
-const char* ssid = "*****";
-const char* password = "*****";
+const char* ssid = "*****"; // Coloque aqui o nome da sua rede wifi
+const char* password = "*****"; // Coloque aqui a senha da sua rede wifi
 
 void setup()
 {
@@ -21,7 +20,7 @@ void loop()
 {
     if ((WiFi.status() == WL_CONNECTED)) {
         HTTPClient http;
-        http.begin("192.168.1.36", 5000, "/alert");
+        http.begin("0.0.0.0", 5000, "/alert"); // Coloque aqui o IP do seu PC
         int signal_on = digitalRead(signal_pin);
         if (signal_on == HIGH) {
             int httpCode = http.GET();
