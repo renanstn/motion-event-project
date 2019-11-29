@@ -4,6 +4,8 @@ Repositório de um micro-projeto utilizando ESP-32 e um servidor em Flask (pytho
 ## Oh God why?
 A idéia deste projeto veio [deste](https://www.tindie.com/products/dekuNukem/daytripper-hide-my-windows-laser-tripwire/) produto aleatório com a mesma proposta, cuja propaganda apareceu no meu feed em uma dia qualquer. Achei o produto interessante e resolvi replicar, porém, com os materiais que eu tinha em casa.
 
+Ele detecta movimento no local que o sensor estiver sido posicionado. Ao detectar, ele envia uma request para o seu pc, minimizando assim, a janela que você estiver vendo aqueles vídeos daquelas pobres meninas sem roupas, ou aquele minecraft que você vergonhosamente ainda joga na sua sala escondido do seu chefe.
+
 ![funcionamento do produto](https://github.com/Doc-McCoy/motion-event-project/blob/master/screenshots/example.gif)
 
 ## Oh God how?
