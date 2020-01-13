@@ -32,7 +32,7 @@ Para fazer este projeto, você precisará dos seguintes materiais:
 - Ligue o ESP32 ao sensor PIR, conecte o fio de *signal* do PIR ao pino 15 do ESP32
 - Feche a IDE Arduino, abra o projeto no seu editor de códigos favorito
 - Inicialize um ambiente virtual: `python -m venv .venv `
-- Ative seu ambiente virtual `source .venv\Scripts\activate` para windows ou `.venv\bin\activate` para linux
+- Ative seu ambiente virtual `.venv\Scripts\activate` para windows ou `source .venv/bin/activate` para linux
 - Instale as pedendências do projeto `pip install -r requirements.txt`
 - Ligue seu ESP32 a uma fonte de energia, e aguarde alguns segundos para que o sensor seja calibrado automaticamente
 - Suba o servidor com `python src\run.py`
