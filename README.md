@@ -1,10 +1,11 @@
-# motion-event-project
-Repositório de um micro-projeto utilizando ESP-32 e um servidor em Flask (python), onde o ESP emite um sinal ao detectar movimentos, e este sinal aciona um atalho no computador que está rodando o servidor (um alt + tab, por exemplo)
+# Motion-Event Project
+
+Repositório de um micro-projeto utilizando a placa ESP-32 e um servidor em Flask (python), onde o ESP emite um sinal ao detectar movimentos, e este sinal aciona um atalho (alt + tab) no computador, escondendo assim aqueles vídeos daquelas pobres garotas despidas que você fica vendo no meio da tarde aí.
 
 ## Oh God why?
 A idéia deste projeto veio [deste](https://www.tindie.com/products/dekuNukem/daytripper-hide-my-windows-laser-tripwire/) produto aleatório com a mesma proposta, cuja propaganda apareceu no meu feed em uma dia qualquer. Achei o produto interessante e resolvi replicar, porém, com os materiais que eu tinha em casa.
 
-Ele detecta movimento no local que o sensor estiver sido posicionado. Ao detectar, ele envia uma request para o seu pc, minimizando assim, a janela que você estiver vendo aqueles vídeos daquelas pobres meninas sem roupas, ou aquele minecraft que você vergonhosamente ainda joga na sua sala escondido do seu chefe.
+Ele detecta movimento no local que o sensor estiver sido posicionado. Ao detectar, ele envia uma request para o seu pc, minimizando assim, a janela que você estiver vendo aqueles vídeos específicos que você fica vendo, ou aquele minecraft que você vergonhosamente ainda joga na sua sala escondido do seu chefe.
 
 ![funcionamento do produto](https://github.com/Doc-McCoy/motion-event-project/blob/master/screenshots/example.gif)
 
@@ -23,7 +24,7 @@ Para fazer este projeto, você precisará dos seguintes materiais:
 - Protoboard
 - Fios
 
-## Oh God give me steps!
+## Oh God give me the steps!
 - Clone o projeto, óbvio
 - Abra o arquivo `src/client/client-esp32.ino` com sua **IDE Arduino**
 - Adicione o nome e senha da sua rede WIFI nas linhas indicadas
